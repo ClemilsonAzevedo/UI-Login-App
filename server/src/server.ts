@@ -1,9 +1,17 @@
 import { fastify } from 'fastify'
 import { RegisterUser } from './routes/register-user'
+import { LoginUser } from './routes/login-user'
+import fastifyCors from '@fastify/cors'
+import { register } from 'module'
 
 const app = fastify()
-app.register(RegisterUser)
 
+app.register(fastifyCors, {
+  origin: '*',
+})
+
+app.register(RegisterUser)
+app.register(LoginUser)
 
 const port = 3333
 app
