@@ -21,7 +21,7 @@ export function SignUp() {
 
           <Button type="submit" className="w-full text-foreground hover:opacity-90">Sign Up</Button>
 
-          <a className="text-muted-foreground hover:text-primary text-center hover:cursor-pointer">
+          <a href="/login" className="text-muted-foreground hover:text-primary text-center hover:cursor-pointer">
             You already have account?
           </a>
         </form>

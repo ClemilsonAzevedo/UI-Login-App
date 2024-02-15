@@ -18,7 +18,7 @@ export function LoginPage() {
 
           <Button type="submit" className="w-full text-foreground hover:opacity-90">Sign In</Button>
 
-          <a className="text-muted-foreground hover:text-primary text-center hover:cursor-pointer">
+          <a href="/signup" className="text-muted-foreground hover:text-primary text-center hover:cursor-pointer">
             You do not have account?
           </a>
         </form>
